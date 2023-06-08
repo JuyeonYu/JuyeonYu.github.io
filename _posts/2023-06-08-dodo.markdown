@@ -5,8 +5,8 @@ date:   2023-06-06 09:43:47 +0900
 categories: projects
 ---
 #너와 나의 할일 공유   
-![appstore](https://github.com/JuyeonYu/JuyeonYu.github.io/assets/50232474/8bcb0a4f-e9c2-453e-9298-af911ff30ac8){: width="300" height="300"){: .center}
-![6 5-1](https://github.com/JuyeonYu/JuyeonYu.github.io/assets/50232474/a09715df-ae3d-4183-8c0e-364b1ca73f02){: width="50%" height="50%"){: .center}
+![appstore](https://github.com/JuyeonYu/JuyeonYu.github.io/assets/50232474/8bcb0a4f-e9c2-453e-9298-af911ff30ac8){: width="50%" height="50%"){: .center}   
+![6 5-1](https://github.com/JuyeonYu/JuyeonYu.github.io/assets/50232474/a09715df-ae3d-4183-8c0e-364b1ca73f02){: width="25%" height="25%")
 ![6 5-2](https://github.com/JuyeonYu/JuyeonYu.github.io/assets/50232474/1e6d400b-bf77-4bf9-87dd-bb5d1c102bf7){: width="25%" height="25%")
 ![6 5-3](https://github.com/JuyeonYu/JuyeonYu.github.io/assets/50232474/9649fd9f-e4bb-4d48-b184-801aa61d27e9){: width="25%" height="25%")
 ![6 5-4](https://github.com/JuyeonYu/JuyeonYu.github.io/assets/50232474/d47a78d1-9b80-498d-a5f1-59f92459dfce){: width="25%" height="25%")
