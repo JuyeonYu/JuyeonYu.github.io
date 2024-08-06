@@ -14,7 +14,7 @@ test
 
     function postMessageToiOS(postData) {
         window.webkit.messageHandlers.callBackHandler.postMessage(postData);
-        window.Android.callBackHandler(postData);
+        window.Android.callBackHandler(JSON.stringfy(postData))
     }
 
     var element_layer = document.getElementById('layer');
