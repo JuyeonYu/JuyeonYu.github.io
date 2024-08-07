@@ -1,3 +1,4 @@
+log
 <html lang="ko">
   <head>
     <title>주소 찾기</title>
@@ -36,7 +37,13 @@
               zonecode : data.zonecode
           };
           window.postMessageToiOS(postData);
+          
         window.Android.callBackHandler(JSON.stringfy(postData));
+
+
+        console.log(`postData: ${postData}`);
+          console.log(`JSON: ${JSON.stringfy(postData)}`);
+
         // window.Android.callBackHandler("123");
         // var postDataString = JSON.stringify(postData);
 
