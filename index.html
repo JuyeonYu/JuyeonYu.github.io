@@ -1,4 +1,4 @@
-test
+test2
 <html lang="ko">
   <head>
     <title>주소 찾기</title>
@@ -14,7 +14,7 @@ test
 
     function postMessageToiOS(postData) {
         window.webkit.messageHandlers.callBackHandler.postMessage(postData);
-        window.Android.callBackHandler(JSON.stringfy(postData))
+        
     }
 
     var element_layer = document.getElementById('layer');
@@ -34,7 +34,8 @@ test
               jibunAddress : jibunAddress,
               zonecode : data.zonecode
           };
-          window.postMessageToiOS(postData);
+        //   window.postMessageToiOS(postData);
+        Android.callBackHandler(JSON.stringfy(postData));
 
         },
         width : '100%',
