@@ -1,4 +1,4 @@
-test3
+test4
 <html lang="ko">
   <head>
     <title>주소 찾기</title>
@@ -13,8 +13,8 @@ test3
     window.addEventListener("message", onReceivedPostMessage, false);
 
     function postMessageToiOS(postData) {
-        // window.webkit.messageHandlers.callBackHandler.postMessage(123);
-        window.webkit.messageHandlers.callBackHandler.postMessage(postData);
+        window.webkit.messageHandlers.callBackHandler.postMessage(123);
+        // window.webkit.messageHandlers.callBackHandler.postMessage(postData);
         
     }
 
@@ -36,8 +36,8 @@ test3
               zonecode : data.zonecode
           };
           window.postMessageToiOS(postData);
-        window.Android.callBackHandler(JSON.stringfy(postData));
-        // window.Android.callBackHandler(123);
+        // window.Android.callBackHandler(JSON.stringfy(postData));
+        window.Android.callBackHandler(123);
 
         },
         width : '100%',
