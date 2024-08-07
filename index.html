@@ -43,14 +43,10 @@ log2
             // if (platform === 'iOS') {
                 window.postMessageToiOS(postData);
             // } else if (platform === 'Android') {
-            //     window.Android.callBackHandler(JSON.stringfy(postData));
+                window.Android.callBackHandler(JSON.stringify(postData));
             // } else {
             //     console.log("Unknown platform.");
             // }
-            // console.log(`postData: ${postData}`);
-            // console.log(`JSON: ${JSON.stringfy(postData)}`);
-
-            window.Android.callBackHandler("123");
         },
         width : '100%',
         height : '100%',
