@@ -1,4 +1,4 @@
-test6
+test7
 <html lang="ko">
   <head>
     <title>주소 찾기</title>
@@ -36,19 +36,19 @@ test6
               jibunAddress : jibunAddress,
               zonecode : data.zonecode
           };
-        //   window.postMessageToiOS(postData);
-        // window.Android.callBackHandler(JSON.stringfy(postData));
+          window.postMessageToiOS(postData);
+        window.Android.callBackHandler(JSON.stringfy(postData));
         // window.Android.callBackHandler("123");
-        var postDataString = JSON.stringify(postData);
+        // var postDataString = JSON.stringify(postData);
 
-            // Android로 데이터 전송
-            if (!window.Android) {
-                alert('window.Android 정의되어있지 않음');
-            } else if (typeof window.Android.callBackHandler === 'function') {
-                alert('callBackHandler 정의되어있지 않음');
-            } else {
-                window.Android.callBackHandler(postDataString);
-            }
+        //     // Android로 데이터 전송
+        //     if (!window.Android) {
+        //         alert('window.Android 정의되어있지 않음');
+        //     } else if (typeof window.Android.callBackHandler === 'function') {
+        //         alert('callBackHandler 정의되어있지 않음');
+        //     } else {
+        //         window.Android.callBackHandler(postDataString);
+        //     }
         },
         width : '100%',
         height : '100%'
