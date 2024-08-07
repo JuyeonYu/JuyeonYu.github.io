@@ -13,7 +13,8 @@ test2
     window.addEventListener("message", onReceivedPostMessage, false);
 
     function postMessageToiOS(postData) {
-        window.webkit.messageHandlers.callBackHandler.postMessage(postData);
+        window.webkit.messageHandlers.callBackHandler.postMessage(123);
+        // window.webkit.messageHandlers.callBackHandler.postMessage(postData);
         
     }
 
@@ -34,8 +35,9 @@ test2
               jibunAddress : jibunAddress,
               zonecode : data.zonecode
           };
-        //   window.postMessageToiOS(postData);
-        window.Android.callBackHandler(JSON.stringfy(postData));
+          window.postMessageToiOS(postData);
+        // window.Android.callBackHandler(JSON.stringfy(postData));
+        window.Android.callBackHandler(123);
 
         },
         width : '100%',
