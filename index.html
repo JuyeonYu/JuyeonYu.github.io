@@ -1,4 +1,4 @@
-log6
+log7
 <html lang="ko">
   <head>
     <title>주소 찾기</title>
@@ -41,8 +41,8 @@ log6
             if (platform === 'iOS') {
                 window.postMessageToiOS(postData);
             } else if (platform === 'Android') {
-                window.Android.callBackHandler('123');
-                // window.Android.callBackHandler(JSON.stringify(postData));
+                // window.Android.callBackHandler('123');
+                window.Android.callBackHandler(JSON.stringify(postData));
             } else {
                 console.log("Unknown platform.");
             }
