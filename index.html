@@ -1,4 +1,4 @@
-log3
+log4
 <html lang="ko">
   <head>
     <title>주소 찾기</title>
@@ -18,16 +18,15 @@ log3
 
     var element_layer = document.getElementById('layer');
     function execDaumPostcode() {
-        alert('execDaumPostcode');
       new daum.Postcode({
         oncomplete: function(data) {
-          var jibunAddress = ""
+            var jibunAddress = ""
 
-          if (data.jibunAddress == "") {
-            jibunAddress = data.autoJibunAddress
-          } else if (data.autoJibunAddress == "") {
-            jibunAddress = data.jibunAddress
-          }
+            if (data.jibunAddress == "") {
+                jibunAddress = data.autoJibunAddress
+            } else if (data.autoJibunAddress == "") {
+                jibunAddress = data.jibunAddress
+            }
 
             var postData = {
                 roadAddress : data.roadAddress,
@@ -39,11 +38,11 @@ log3
             var platform = getPlatform();
             console.log("Current platform:", platform);
 
-            // // 플랫폼에 따른 분기 처리
             // if (platform === 'iOS') {
-                window.postMessageToiOS(postData);
+                // window.postMessageToiOS(postData);
             // } else if (platform === 'Android') {
-                window.Android.callBackHandler(JSON.stringify(postData));
+                window.Android.callBackHandler('123');
+                // window.Android.callBackHandler(JSON.stringify(postData));
             // } else {
             //     console.log("Unknown platform.");
             // }
